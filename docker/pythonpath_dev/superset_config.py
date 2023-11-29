@@ -100,13 +100,33 @@ class CeleryConfig(object):
 
 CELERY_CONFIG = CeleryConfig
 
-FEATURE_FLAGS = {"ALERT_REPORTS": True}
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = True
 WEBDRIVER_BASEURL = "http://superset:8088/"
 # The base URL for the email report hyperlinks.
 WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 
 SQLLAB_CTAS_NO_LIMIT = True
+
+# NEW
+FEATURE_FLAGS = {
+    "ALERT_REPORTS": True,
+    "DASHBOARD_CROSS_FILTERS": True,
+    "DRILL_BY": True,
+    "DRILL_TO_DETAIL": True,
+    "GENERIC_CHART_AXES": True,
+    "HORIZONTAL_FILTER_BAR": True,
+    "ENABLE_TEMPLATE_PROCESSING": True,
+    "DASHBOARD_RBAC": True
+    }
+
+SLACK_API_TOKEN = "xoxb-3326907165111-5905121194480-fZsoUHULT84xXmM3HE9Xey3T"
+
+SUPERSET_LOAD_EXAMPLES = False
+
+# Enables SWAGGER UI for superset openapi spec
+FAB_API_SWAGGER_UI = True
+# Enables user and role CRUD endpoints
+FAB_ADD_SECURITY_API = True
 
 #
 # Optionally import superset_config_docker.py (which will have been included on
