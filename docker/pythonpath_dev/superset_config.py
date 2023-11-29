@@ -107,6 +107,7 @@ WEBDRIVER_BASEURL_USER_FRIENDLY = WEBDRIVER_BASEURL
 
 SQLLAB_CTAS_NO_LIMIT = True
 
+###########################################
 # NEW
 FEATURE_FLAGS = {
     "ALERT_REPORTS": True,
@@ -118,16 +119,14 @@ FEATURE_FLAGS = {
     "ENABLE_TEMPLATE_PROCESSING": True,
     "DASHBOARD_RBAC": True
     }
-
 SLACK_API_TOKEN = "xoxb-3326907165111-5905121194480-"
-
-SUPERSET_LOAD_EXAMPLES = False
-
+# SUPERSET_LOAD_EXAMPLES = False
 # Enables SWAGGER UI for superset openapi spec
 FAB_API_SWAGGER_UI = True
 # Enables user and role CRUD endpoints
 FAB_ADD_SECURITY_API = True
-
+SECRET_KEY = 'JjT*JNaTBFS2#M@ejK86'
+###########################################
 #
 # Optionally import superset_config_docker.py (which will have been included on
 # the PYTHONPATH) in order to allow for local settings to be overridden
