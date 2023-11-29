@@ -120,12 +120,7 @@ FEATURE_FLAGS = {
     "DASHBOARD_RBAC": True
     }
 SLACK_API_TOKEN = "xoxb-3326907165111-5905121194480-"
-# SUPERSET_LOAD_EXAMPLES = False
-# Enables SWAGGER UI for superset openapi spec
-FAB_API_SWAGGER_UI = True
-# Enables user and role CRUD endpoints
-FAB_ADD_SECURITY_API = True
-SECRET_KEY = 'JjT*JNaTBFS2#M@ejK86'
+SUPERSET_LOAD_EXAMPLES = True
 ###########################################
 #
 # Optionally import superset_config_docker.py (which will have been included on
